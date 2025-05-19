@@ -9,6 +9,12 @@ import { CustomerAddressModule } from "./customer_address/customer_address.modul
 import { LanguagesModule } from "./languages/languages.module";
 import { RegionModule } from './region/region.module';
 import { DistrictModule } from './district/district.module';
+import { VenueModule } from './venue/venue.module';
+import { VenueTypesModule } from './venue_types/venue_types.module';
+import { TypesModule } from './types/types.module';
+import { VenuePhotoModule } from './venue_photo/venue_photo.module';
+import { SeatModule } from './seat/seat.module';
+import { SeatTypesModule } from './seat_types/seat_types.module';
 @Module({
 	imports: [
 		ConfigModule.forRoot({ envFilePath: ".env", isGlobal: true }),
@@ -22,6 +28,12 @@ import { DistrictModule } from './district/district.module';
 		CustomerAddressModule,
 		RegionModule,
 		DistrictModule,
+		VenueModule,
+		VenueTypesModule,
+		TypesModule,
+		VenuePhotoModule,
+		SeatModule,
+		SeatTypesModule,
 	],
 	controllers: [],
 	providers: [],

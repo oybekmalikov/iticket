@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
+import { MongooseModule } from "@nestjs/mongoose";
 import { RegionController } from "./region.controller";
 import { RegionService } from "./region.service";
 import { Region } from "./schemas/region.entity";
-import { MongooseModule } from '@nestjs/mongoose'
 
 @Module({
 	imports: [
@@ -15,5 +15,6 @@ import { MongooseModule } from '@nestjs/mongoose'
 	],
 	controllers: [RegionController],
 	providers: [RegionService],
+	exports: [RegionService],
 })
 export class RegionModule {}
